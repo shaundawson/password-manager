@@ -12,3 +12,6 @@ https://blog.codinghorror.com/password-rules-are-bullshit/
 
 Canvas Documentation:
 https://tkdocs.com/tutorial/canvas.html
+
+TKinter Grid columnspan
+https://replit.com/@ShaunDawson/grid-columnspan-demo#main.py
