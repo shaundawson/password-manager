@@ -16,6 +16,8 @@ https://blog.codinghorror.com/password-rules-are-bullshit/
 Canvas Documentation:
 https://tkdocs.com/tutorial/canvas.html
 
-
 Python File Write
 https://www.w3schools.com/python/python_file_write.asp
+
+Pyperclip 1.8.2 Documentation: 
+https://pypi.org/project/pyperclip/
