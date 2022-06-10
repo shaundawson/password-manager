@@ -1,10 +1,20 @@
 from tkinter import *
-LIGHT = "#ffffff"
+import string
+from random import *
 
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
+def generate_password():
+    characters = string.ascii_letters + string.punctuation  + string.digits
+    password =  "".join(choice(characters) for x in range(randint(8, 16)))
+    password_entry.insert(0, password)
 
-# ---------------------------- SAVE PASSWORD ------------------------------- #
-
+# ---------------------------- SAVE PASSWORD ------------------------------- #       
+def add_password():
+    with open("data.txt", "a") as data_file:
+        data_file.write(website_entry.get() + " | " + email_entry.get() +  " | " +  password_entry.get() + "\n")
+        website_entry.delete(0, END)
+        password_entry.delete(0, END)
+    
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
 window.title("Password Manager")
@@ -34,9 +44,9 @@ password_entry = Entry(width=18)
 password_entry.grid(row=3, column=1)
 
 #Buttons
-generate_password_button = Button(text="Generate Password")
+generate_password_button = Button(text="Generate Password",command=generate_password)
 generate_password_button.grid(row=3, column=2)
-add_button = Button(text="Add", width=36)
+add_button = Button(text="Add", width=36, command=add_password)
 add_button.grid(row=4, column=1, columnspan=2)
 
 window.mainloop()
