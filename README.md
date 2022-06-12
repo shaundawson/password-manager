@@ -2,6 +2,9 @@
  A simple python password manager using Tkinter.
 
 
+![Alt text](/mypass.png?raw=true "MyPass")
+
+
 Resources: 
 
 Graphical User Interfaces with Tk:
