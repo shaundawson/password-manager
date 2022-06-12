@@ -2,7 +2,7 @@
  A simple python password manager using Tkinter.
 
 
-<img src="https://5688825.fs1.hubspotusercontent-na1.net/hubfs/5688825/mypass.png" width="100" height="100">
+<img src="https://5688825.fs1.hubspotusercontent-na1.net/hubfs/5688825/mypass.png" width="200" height="200">
 
 
 ###### Resources: 
